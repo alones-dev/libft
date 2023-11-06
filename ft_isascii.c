@@ -6,13 +6,13 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:55 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:13:08 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:46:44 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    return (0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

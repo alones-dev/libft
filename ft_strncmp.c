@@ -6,22 +6,22 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:51 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:15:29 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    int i;
+	int	i;
 
-    if (n == 0)
-        return (0);
-    i = 0;
-    while (s1[i] && s1[i] == s2[i] && i < n)
-        i++;
-    if (i < n)
-        return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-    return (0);
+	if (n == 0)
+		return (0);
+	i = 0;
+	while (s1[i] && s1[i] == s2[i] && i < n)
+		i++;
+	if (i < n)
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	return (0);
 }

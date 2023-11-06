@@ -6,33 +6,33 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:24 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:53 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:23:09 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
-    int i;
-    
-    i = 0;
-    while (s[i])
-        i++;
-    return (i);
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (size > 0)
-    {        
-        while (src[i] && i < (size - 1))
-        {
-            dst[i] = src[i];
-            i++;
-        }
-        dst[i] = '\0';
-    }
-    return (ft_strlen(src));
+	i = 0;
+	if (size > 0)
+	{
+		while (src[i] && i < (size - 1))
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (ft_strlen(src));
 }

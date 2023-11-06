@@ -6,20 +6,20 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:17 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:57 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:05:57 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        if (s[i] == c)
-            return ((char *)s + i);
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return ((char *)s + i);
+		i++;
+	}
+	return (0);
 }

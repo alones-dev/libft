@@ -6,21 +6,21 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:14 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:58 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:05:00 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <fcntl.h>
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        write(fd, &s[i], 1);
-        i++;
-    }
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }

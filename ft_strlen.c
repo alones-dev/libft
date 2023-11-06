@@ -6,16 +6,16 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:25 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:52 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:27:48 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
-    int i;
-    
-    i = 0;
-    while (s[i])
-        i++;
-    return (i);
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

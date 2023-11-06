@@ -6,28 +6,28 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:29 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:12:50 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:17:50 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strnstr(const char *s1 , const char *s2 , size_t len)
+char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
 	int	i;
 	int	j;
-	int	lenS2;
+	int	len_s2;
 
 	if (!s2[0])
 		return ((char *)s1);
 	i = 0;
-	lenS2 = ft_strlen(s2);
-	while (s1[i] && (i + lenS2 - 1) < len)
+	len_s2 = ft_strlen(s2);
+	while (s1[i] && (i + len_s2 - 1) < len)
 	{
 		j = 0;
 		while (s2[j] && s1[i + j] == s2[j])
 		{
-			if (j == lenS2 - 1)
+			if (j == len_s2 - 1)
 				return ((char *)(s1 + i));
 			j++;
 		}
@@ -35,4 +35,3 @@ char *ft_strnstr(const char *s1 , const char *s2 , size_t len)
 	}
 	return (0);
 }
-

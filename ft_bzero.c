@@ -6,22 +6,22 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:39 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:11:44 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:43:37 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    int i;
-    char *mem;
+	int		i;
+	char	*mem;
 
-    i = 0;
-    mem = (char *)s;
-    while (i < n)
-    {
-        mem[i] = 0;
-        i++;
-    }
+	i = 0;
+	mem = (char *)s;
+	while (i < n)
+	{
+		mem[i] = 0;
+		i++;
+	}
 }

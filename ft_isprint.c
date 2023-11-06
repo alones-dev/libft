@@ -6,13 +6,13 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:59 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:13:07 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:49:18 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if ((c >= 32 && c <= 126) || (c >= 97 && c <= 122))
-        return (1);
-    return (0);
+	if ((c >= 32 && c <= 126) || (c >= 97 && c <= 122))
+		return (1);
+	return (0);
 }

@@ -6,19 +6,34 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:48:39 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 13:50:49 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:12:34 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	ft_strlen(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int i;
+	char *tbl;
 
 	i = 0;
+	tbl = malloc(sizeof(char) * (ft_strlen((char *)s) + 1));
+	if (!tbl)
+		return (NULL);
 	while (s[i])
 	{
-		f(i, s[i]);
+		tbl[i] = f(i, s[i]);
 		i++;
 	}
-	return ();
+	tbl[i] = '\0';
+	return (tbl);
 }

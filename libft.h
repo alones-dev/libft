@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:36:02 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:54:29 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 10:34:23 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <stdlib.h>
 # include <string.h>
 
-int     ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 void	ft_bzero(void *s, size_t n)
 void	*ft_calloc(size_t nbrElement, size_t sizeElement)
 int	ft_isalnum(int c)
@@ -37,7 +37,7 @@ void	ft_putchar_fd(char c, int fd)
 void	ft_putendl_fd(char *s, int fd)
 void	ft_putnbr_fd(int n, int fd)
 void	ft_putstr_fd(char *s, int fd)
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 char	*ft_strchr(const char *s, int c)
 char	*ft_strdup(const char *s)
 char	*ft_strjoin(char const *s1, char const *s2)

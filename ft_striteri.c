@@ -6,6 +6,20 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:02:52 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 16:02:54 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:16:15 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+char	*ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	int i;
+
+	i = 0;
+	while (s[i])
+	{
+		tbl[i] = f(i, s[i]);
+		i++;
+	}
+	tbl[i] = '\0';
+	return (tbl);
+}

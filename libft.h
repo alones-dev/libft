@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:36:02 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 10:34:23 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 10:56:09 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 
 # include <stdio.h>
 # include <unistd.h>
-# include <fcntl.h>
 # include <stdlib.h>
-# include <string.h>
 
 int	ft_atoi(const char *nptr)
 void	ft_bzero(void *s, size_t n)

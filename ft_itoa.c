@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 15:57:29 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 16:33:06 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ void	rev_char(char *tab, int size)
 
 char	*ft_itoa(int n)
 {
-	char	*tbl;
-	int		i;
+	char *tbl;
+	int i;
 
 	i = 0;
 	tbl = malloc(sizeof(char) * get_len_int(n));
@@ -70,9 +70,4 @@ char	*ft_itoa(int n)
 	}
 	rev_char(tbl, ft_strlen(tbl));
 	return (tbl);
-}
-
-void	main(void)
-{
-	printf("%s\n", ft_itoa(285123));
 }

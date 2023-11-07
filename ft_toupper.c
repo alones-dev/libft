@@ -6,9 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:42 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 16:06:50 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:02:48 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalphalower(int c)
 {

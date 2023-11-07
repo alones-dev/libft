@@ -6,11 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:00 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:51:33 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:06:07 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {

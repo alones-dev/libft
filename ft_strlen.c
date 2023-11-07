@@ -6,9 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:25 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 16:27:48 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:05:12 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

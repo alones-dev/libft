@@ -6,9 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:59 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:49:18 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:03:39 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

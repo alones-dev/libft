@@ -6,11 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:39 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:43:37 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:05:44 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

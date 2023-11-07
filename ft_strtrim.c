@@ -6,13 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:33 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 16:13:44 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:08:23 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

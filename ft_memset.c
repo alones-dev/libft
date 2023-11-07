@@ -6,11 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:08 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:59:26 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:06:55 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_memset(void *s, int c, size_t n)
 {

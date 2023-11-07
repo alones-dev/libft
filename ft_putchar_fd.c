@@ -6,12 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:09 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:59:55 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:07:01 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <fcntl.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

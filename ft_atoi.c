@@ -6,9 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:34 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/06 15:39:16 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/07 09:03:08 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

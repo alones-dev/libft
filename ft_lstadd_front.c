@@ -6,8 +6,14 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:02:21 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 13:35:33 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:03:34 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	new->next = *lst;
+	*lst = new;
+}

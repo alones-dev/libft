@@ -6,8 +6,13 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:03:40 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 13:35:36 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:28:57 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstclear(t_list *lst, void (*del)(void *))
+{
+	//
+}

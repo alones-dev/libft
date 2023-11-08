@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 11:54:32 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:36:06 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,12 @@ void	rev_char(char *tab, int size)
 	}
 }
 
+void	is_negative(int i, int neg, char *tbl)
+{
+	if (neg == 1)
+		tbl[i] = '-';
+}
+
 char	*ft_itoa(int n)
 {
 	char	*tbl;
@@ -71,13 +77,12 @@ char	*ft_itoa(int n)
 		n2 = n2 / 10;
 		i++;
 	}
-	if (neg == 1)
-		tbl[i] = '-';
+	is_negative(i, neg, tbl);
 	rev_char(tbl, ft_strlen(tbl));
 	return (tbl);
 }
 
 void	main(void)
 {
-	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(-27483648));
 }

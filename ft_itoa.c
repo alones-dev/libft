@@ -6,22 +6,12 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 10:23:11 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:54:32 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
-#include <stdlib.h>
-
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
 
 int	get_len_int(int nb)
 {
@@ -40,16 +30,13 @@ int	get_len_int(int nb)
 	return (i);
 }
 
-void	rev_char(char *tab, int size, int neg)
+void	rev_char(char *tab, int size)
 {
 	int		i;
 	int		temp;
 	float	j;
 
-	if (neg == 1)
-		i = 1;
-	else
-		i = 0;
+	i = 0;
 	j = size / 2;
 	while (i < j)
 	{
@@ -65,30 +52,32 @@ char	*ft_itoa(int n)
 	char	*tbl;
 	int		i;
 	int		neg;
+	long	n2;
 
 	i = 0;
+	neg = 0;
+	n2 = n;
 	tbl = malloc(sizeof(char) * get_len_int(n));
-	if (n < 0)
+	if (!tbl)
+		return (NULL);
+	if (n2 < 0)
 	{
-		tbl[0] = '-';
-		n = -n;
-		i = 1;
 		neg = 1;
+		n2 = -n2;
 	}
-	while (n != 0)
+	while (n2 != 0)
 	{
-		tbl[i] = n % 10 + '0';
-		n = n / 10;
+		tbl[i] = n2 % 10 + '0';
+		n2 = n2 / 10;
 		i++;
 	}
 	if (neg == 1)
-		rev_char(tbl, ft_strlen(tbl), 1);
-	else
-		rev_char(tbl, ft_strlen(tbl), 0);
+		tbl[i] = '-';
+	rev_char(tbl, ft_strlen(tbl));
 	return (tbl);
 }
 
 void	main(void)
 {
-	printf("%s\n", ft_itoa(-125));
+	printf("%s\n", ft_itoa(-2147483648));
 }

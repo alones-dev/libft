@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 12:36:06 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:36:49 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,10 @@ void	is_negative(int i, int neg, char *tbl)
 
 char	*ft_itoa(int n)
 {
-	char	*tbl;
-	int		i;
-	int		neg;
-	long	n2;
+	char *tbl;
+	int i;
+	int neg;
+	long n2;
 
 	i = 0;
 	neg = 0;
@@ -80,9 +80,4 @@ char	*ft_itoa(int n)
 	is_negative(i, neg, tbl);
 	rev_char(tbl, ft_strlen(tbl));
 	return (tbl);
-}
-
-void	main(void)
-{
-	printf("%s\n", ft_itoa(-27483648));
 }

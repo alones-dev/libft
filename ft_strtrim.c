@@ -6,23 +6,13 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:33 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:08:23 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:57:58 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
-
-int	is_in_set(int c, char const *set)
+static int	is_in_set(int c, char const *set)
 {
 	int	i;
 
@@ -36,7 +26,7 @@ int	is_in_set(int c, char const *set)
 	return (0);
 }
 
-void	set_new_str(char const *s1, char *new, int start, int end)
+static void	set_new_str(char const *s1, char *new, int start, int end)
 {
 	int	i;
 

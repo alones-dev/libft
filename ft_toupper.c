@@ -6,13 +6,13 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:42 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:02:48 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:55:23 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalphalower(int c)
+static int	ft_isalphalower(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (1);

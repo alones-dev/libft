@@ -6,21 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:39 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:08:28 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/08 12:58:36 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

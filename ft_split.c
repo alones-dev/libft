@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:15 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 10:40:34 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:43:26 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ char	**ft_split(char const *s, char c)
 	char	**tbl;
 
 	j = 0;
-	i = 0;
 	tbl = malloc(sizeof(char) * (count_words((char *)s, c) + 1));
 	if (!tbl)
 		return (NULL);
@@ -43,6 +42,7 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s && *s == c)
 			s++;
+		i = 0;
 		while (s[i] != c && s[i])
 			i++;
 		if (*s && i)
@@ -55,5 +55,5 @@ char	**ft_split(char const *s, char c)
 
 int	main(void)
 {
-	printf("%d\n", count_words("salut-les-gars-tt----sy----testttt", '-'));
+	printf("%d\n", count_words("-----salut-les-gars-tt----sy----testttt", '-'));
 }

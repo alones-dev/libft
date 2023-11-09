@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:06 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 16:30:44 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:19:47 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (dest > src)

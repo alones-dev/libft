@@ -6,14 +6,14 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 12:39:14 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:18:39 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int	get_len_int(int nb)
+static int	get_len_int(int nb)
 {
 	int	i;
 	int	nb2;
@@ -30,7 +30,7 @@ int	get_len_int(int nb)
 	return (i);
 }
 
-void	rev_char(char *tab, int size)
+static void	rev_char(char *tab, int size)
 {
 	int		i;
 	int		temp;
@@ -47,7 +47,7 @@ void	rev_char(char *tab, int size)
 	}
 }
 
-void	is_negative(int i, int neg, char *tbl)
+static void	is_negative(int i, int neg, char *tbl)
 {
 	if (neg == 1)
 		tbl[i] = '-';

@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:08 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:06:55 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:19:55 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_memset(void *s, int c, size_t n)
 {
-	int		i;
+	size_t	i;
 	char	*mem;
 
 	i = 0;

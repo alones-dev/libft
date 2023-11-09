@@ -6,28 +6,11 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:12 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/07 09:07:19 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:20:06 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
-
-void	ft_putstr_fd(char *s, int fd)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {

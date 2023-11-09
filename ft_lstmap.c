@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:04:05 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 08:55:10 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 11:44:11 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,17 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list *new;
 	t_list *act;
 
-	new = malloc(sizeof(t_list));
-	act = lst;
-	while (act)
+	new = 0;
+	while (lst)
 	{
-		new = (*f)(act->content);
-		new = new->next;
-		act = act->next;
-		if (del)
-			ft_lstdelone(new, del);
+		act = ft_lstnew(f(lst->content));
+		if (!act)
+		{
+			ft_lstclear(&new, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new, act);
+		lst = lst->next;
 	}
 	return (new);
 }

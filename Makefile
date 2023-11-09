@@ -6,7 +6,7 @@
 #    By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 14:07:32 by kdaumont          #+#    #+#              #
-#    Updated: 2023/11/09 11:03:38 by kdaumont         ###   ########.fr        #
+#    Updated: 2023/11/09 11:10:06 by kdaumont         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,8 @@ C_FILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_is ascii
 C_FILES_BONUS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c \
 				ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c
 
-OBJS_FILES = $(C_FILES: .c=.0)
-OBJS_FILES_BONUS = $(C_FILES_BONUS: .c=.0)
+OBJS_FILES = $(C_FILES:.c=.0)
+OBJS_FILES_BONUS = $(C_FILES_BONUS:.c=.0)
 
 CC = cc
 FLAGS = -Wall -Werror -Wextra

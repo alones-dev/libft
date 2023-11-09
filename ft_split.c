@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:15 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/08 15:13:05 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 10:40:34 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,24 +21,39 @@ int	count_words(char *s, char c)
 	count = 0;
 	while (s[i])
 	{
-		if (s[i] == c || s[i + 1] == '\0')
+		if ((s[i] == c && s[i + 1] != c) || s[i + 1] == '\0')
 			count++;
 		i++;
 	}
 	return (count);
 }
 
-char	**ft_split(char *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		i;
+	int		j;
 	char	**tbl;
 
-	// tbl = malloc(sizeof(char) * (count_words(s, c) + 1));
-	// if (!tbl)
-	//   return (NULL);
+	j = 0;
+	i = 0;
+	tbl = malloc(sizeof(char) * (count_words((char *)s, c) + 1));
+	if (!tbl)
+		return (NULL);
+	while (*s)
+	{
+		while (*s && *s == c)
+			s++;
+		while (s[i] != c && s[i])
+			i++;
+		if (*s && i)
+			tbl[j++] = ft_substr(s, 0, i);
+		s = s + i;
+	}
+	tbl[j] = NULL;
+	return (tbl);
 }
 
 int	main(void)
 {
-	printf("%d\n", count_words("salut-les-gars-tt-", '-'));
+	printf("%d\n", count_words("salut-les-gars-tt----sy----testttt", '-'));
 }

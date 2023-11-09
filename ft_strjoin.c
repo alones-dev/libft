@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:20 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 12:20:46 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:46:35 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 
 	new = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
+	if (!new)
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (s1[i])

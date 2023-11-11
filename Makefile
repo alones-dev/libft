@@ -6,7 +6,7 @@
 #    By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 14:07:32 by kdaumont          #+#    #+#              #
-#    Updated: 2023/11/09 13:04:48 by kdaumont         ###   ########.fr        #
+#    Updated: 2023/11/11 01:11:42 by kdaumont         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,10 +25,9 @@ OBJS_FILES = $(C_FILES:.c=.o)
 OBJS_FILES_BONUS = $(C_FILES_BONUS:.c=.o)
 
 CC = cc
-FLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
-$(NAME):
-	$(CC) $(FLAGS) -c $(C_FILES)
+$(NAME):${OBJS_FILES}
 	ar rcs $(NAME) $(OBJS_FILES)
 
 all: $(NAME)
@@ -42,5 +41,8 @@ clean:
 fclean: clean
 		rm -rf $(NAME)
 
-re:
-	fclean all
+re: fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(C_FILES)
+	gcc -nostartfiles -shared -o libft.so $(OBJS_FILES)

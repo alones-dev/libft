@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:31 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 13:54:12 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 01:34:32 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = ft_strlen(s);
 	srch = (char)c;
-	while (i != 0)
+	while (i >= 0)
 	{
 		if (s[i] == srch)
 			return ((char *)s + i);

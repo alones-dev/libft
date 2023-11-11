@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:15 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 14:08:45 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 02:08:07 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static int	count_words(char *s, char c)
 
 	i = 0;
 	count = 0;
+	while (s[i] && s[i] == c)
+		i++;
 	while (s[i])
 	{
 		if ((s[i] == c && s[i + 1] != c) || s[i + 1] == '\0')
@@ -35,7 +37,7 @@ char	**ft_split(char const *s, char c)
 	char	**tbl;
 
 	j = 0;
-	tbl = malloc(sizeof(char) * (count_words((char *)s, c) + 1));
+	tbl = malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
 	if (!tbl)
 		return (NULL);
 	while (*s)
@@ -46,14 +48,13 @@ char	**ft_split(char const *s, char c)
 		while (s[i] != c && s[i])
 			i++;
 		if (*s && i)
-			tbl[j++] = ft_substr(s, 0, i);
+		{
+			tbl[j] = ft_substr(s, 0, i);
+			if (!tbl[j++])
+				return (NULL);
+		}
 		s = s + i;
 	}
 	tbl[j] = NULL;
 	return (tbl);
-}
-
-void	main(void)
-{
-	printf("%s\n", *ft_split("kfgkjsg-sdgdsg--dsgds-sd", '-'));
 }

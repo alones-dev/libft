@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:12:02 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 12:19:20 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 01:24:52 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	mem1 = (char *)s1;
 	mem2 = (char *)s2;
-	while (mem1[i] && mem1[i] == mem2[i] && i < n)
+	while (mem1[i] == mem2[i] && i + 1 < n)
 		i++;
-	if (i < n)
-		return ((unsigned char)mem1[i] - (unsigned char)mem2[i]);
-	return (0);
+	return ((unsigned char)mem1[i] - (unsigned char)mem2[i]);
 }

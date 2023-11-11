@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 15:11:42 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/11 00:11:25 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:28:26 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	total;
 
 	total = nmemb * size;
-	if (size && nmemb  > __SIZE_MAX__ / size)
+	if (size && nmemb > __SIZE_MAX__ / size)
 		return (NULL);
 	mem = malloc(total);
 	if (!mem)
@@ -26,8 +26,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(mem, total);
 	return (mem);
 }
-
-// int main()
-// {
-// 	calloc(__SIZE_MAX__,3);
-// }

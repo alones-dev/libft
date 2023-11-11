@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:03:40 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/09 14:03:32 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:27:25 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *act;
-	t_list *save;
+	t_list	*act;
+	t_list	*save;
 
 	act = *lst;
 	while (act)

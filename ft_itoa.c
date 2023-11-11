@@ -6,7 +6,7 @@
 /*   By: kdaumont <kdaumont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:47:26 by kdaumont          #+#    #+#             */
-/*   Updated: 2023/11/11 03:05:31 by kdaumont         ###   ########.fr       */
+/*   Updated: 2023/11/11 03:30:18 by kdaumont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ static void	ft_writenbr(long nb, char *str, int *i)
 
 char	*ft_itoa(int n)
 {
-	char *final;
-	int i;
-	long n2;
+	char	*final;
+	int		i;
+	long	n2;
 
 	n2 = n;
 	if (n2 == -2147483648)

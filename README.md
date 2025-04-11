@@ -1,10 +1,8 @@
-# LibFT
+# 🚀 LibFT
 
-LibFT is a remake of the most utils functions made in C for 42School.
+LibFT is a personal remake of the most essential C standard library functions. It is the first project in the 42School common core, designed to deepen your understanding of C programming by implementing various utilities and functions commonly found in the C standard library.
 
-This is the first project in the 42School common core.
-
-## Usage
+## 💻 Usage
 **1. Clone the repository**
 ```
 git clone https://github.com/alones-dev/libft.git
